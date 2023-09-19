@@ -1,0 +1,13 @@
+apiVersion: operators.coreos.com/v1alpha1
+kind: Subscription
+metadata:
+  labels:
+    operators.coreos.com/ibm-websphere-liberty.openshift-operators: ''
+  name: ibm-websphere-liberty
+spec:
+  channel: v1.2
+  installPlanApproval: Automatic
+  name: ibm-websphere-liberty
+  source: ibm-operator-catalog
+  sourceNamespace: openshift-marketplace
+  startingCSV: ibm-websphere-liberty.v1.2.2
